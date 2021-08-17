@@ -2,7 +2,8 @@
 A repo containing the task files.
 
 Powered by
-<img src="zuri.png" width="100px"/>  <img src="hng.png" width="280px"/>
+
+<img src="zuri.png" width="100px"/>  <img src="hng.png" width="250px"/>
 
 
 
