@@ -1,7 +1,7 @@
 # HNG-8-Task-2-to-3
 A repo containing the task files.
 
-<img src="zuri.png" width="100px"/> | <img src="hng.png" width="100px"/>
+<img src="zuri.png" width="100px"/>  <img src="hng.png" width="300px"/>
 
 
 1. Main Screen
