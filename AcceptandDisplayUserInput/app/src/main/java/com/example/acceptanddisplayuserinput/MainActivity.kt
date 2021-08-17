@@ -1,5 +1,6 @@
 package com.example.acceptanddisplayuserinput
 
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -42,15 +43,13 @@ class MainActivity : AppCompatActivity() {
         // set the varible user input to an empty string
         var inputFromUser = " "
         binding?.apply {
-
             // when enterInput button is clicked
             enterInputBtn.setOnClickListener {
-
                 /*if the display text is and empty string and is not visible
                 and show the alert dialog and change the text on the button
                 if the display text is visible, make it invisible and set the value to an empty string*/
+                alertDialog.show()
                 if (displayTextView.text == " " || displayTextView.visibility == View.GONE) {
-                    alertDialog.show()
                     enterInputBtn.text = "click to clear Input"
                 } else {
                     displayTextView.visibility = View.GONE

@@ -12,11 +12,11 @@
         android:id="@+id/display_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="232dp"
+        android:layout_marginBottom="52dp"
         android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/enterInput_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         tools:text="sample" />
 
     <com.google.android.material.button.MaterialButton
