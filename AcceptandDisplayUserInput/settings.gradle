@@ -1,0 +1,2 @@
+rootProject.name = "Accept and Display User Input"
+include ':app'
