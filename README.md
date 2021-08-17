@@ -5,7 +5,7 @@ Powered by
 
 <img src="zuri.png" width="100px"/>  <img src="hng.png" width="250px"/>
 
-https://zuri.team            https://internship.zuri.team
+https://zuri.team ---------   https://internship.zuri.team
 
 
 1. Main Screen
