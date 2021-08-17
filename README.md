@@ -5,7 +5,7 @@ Powered by
 
 <img src="zuri.png" width="100px"/>  <img src="hng.png" width="250px"/>
 
-
+https://zuri.team
 
 
 1. Main Screen
