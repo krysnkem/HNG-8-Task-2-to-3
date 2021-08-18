@@ -7,3 +7,5 @@ Powered by
 
 https://zuri.team ---------   https://internship.zuri.team
 
+![Demo video](mobizen_20210818_083017.mp4)
+
