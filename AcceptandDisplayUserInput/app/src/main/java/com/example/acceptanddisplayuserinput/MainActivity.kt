@@ -53,7 +53,6 @@ class MainActivity : AppCompatActivity() {
                 if the display text is visible, make it invisible and set the value to an empty string*/
 
                 if(!clickedBefore && displayTextView.text.isNullOrBlank()){
-                    Toast.makeText(this@MainActivity, "working!", Toast.LENGTH_SHORT).show()
                     clickedBefore = true
                     alertDialog.show()
                     enterInputBtn.text = "click to clear Input"
@@ -91,9 +90,13 @@ class MainActivity : AppCompatActivity() {
 
             }
         }
+        alertDialog.setOnDismissListener {
+            clickedBefore = false
+        }
 
 
     }
+
 
     // when activity is destroyed, set binding to null
     override fun onDestroy() {
