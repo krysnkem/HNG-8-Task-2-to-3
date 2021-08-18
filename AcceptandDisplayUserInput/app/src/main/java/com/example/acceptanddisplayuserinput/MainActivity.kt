@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    // setting up the app
     private fun setUp(binding: ActivityMainBinding?) {
 
         //set up alert dialog using AlertDialog.Builder
@@ -64,9 +65,6 @@ class MainActivity : AppCompatActivity() {
                     enterInputBtn.text = "click to enter Input"
 
                 }
-
-
-
             }
             //when the ok button is clicked
             okBtn.setOnClickListener {
@@ -82,7 +80,6 @@ class MainActivity : AppCompatActivity() {
                     displayTextView.text = inputFromUser
                     userInput.text.clear()
                 }
-
             }
             cancelBtn.setOnClickListener {
                 alertDialog.dismiss()
@@ -90,13 +87,12 @@ class MainActivity : AppCompatActivity() {
 
             }
         }
+        //when the alert dialog is dismissed, set clickedBefore to false
         alertDialog.setOnDismissListener {
             clickedBefore = false
         }
 
-
     }
-
 
     // when activity is destroyed, set binding to null
     override fun onDestroy() {
