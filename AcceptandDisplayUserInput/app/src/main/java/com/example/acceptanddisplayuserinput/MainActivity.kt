@@ -42,20 +42,30 @@ class MainActivity : AppCompatActivity() {
 
         // set the varible user input to an empty string
         var inputFromUser = " "
+
+        //check button clicked
+        var clickedBefore = false
         binding?.apply {
             // when enterInput button is clicked
             enterInputBtn.setOnClickListener {
-                /*if the display text is and empty string and is not visible
-                and show the alert dialog and change the text on the button
+                /*if the display text is and empty string and the button has not
+                 be clicked before show the alert dialog and change the text on the button
                 if the display text is visible, make it invisible and set the value to an empty string*/
-                alertDialog.show()
-                if (displayTextView.text == " " || displayTextView.visibility == View.GONE) {
+
+                if(!clickedBefore && displayTextView.text.isNullOrBlank()){
+                    Toast.makeText(this@MainActivity, "working!", Toast.LENGTH_SHORT).show()
+                    clickedBefore = true
+                    alertDialog.show()
                     enterInputBtn.text = "click to clear Input"
-                } else {
+
+                }else{
+                    clickedBefore = false
                     displayTextView.visibility = View.GONE
                     displayTextView.text = " "
                     enterInputBtn.text = "click to enter Input"
+
                 }
+
 
 
             }
