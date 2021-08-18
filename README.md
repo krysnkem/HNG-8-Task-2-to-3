@@ -7,5 +7,5 @@ Powered by
 
 https://zuri.team ---------   https://internship.zuri.team
 
-![Demo video](App Demo.gif)
+![Demo video](App_Demo.gif)
 
